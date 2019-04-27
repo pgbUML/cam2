@@ -23,7 +23,9 @@ var vid = document.getElementById('camera-stream');
 
 // Create an object URL for the video stream and use this 
 // to set the video source.
-vid.src = window.URL.createObjectURL(localMediaStream);
+//vid.src = window.URL.createObjectURL(localMediaStream);
+video.srcObject=stream;
+video.play();
     },
 
     // Error Callback
