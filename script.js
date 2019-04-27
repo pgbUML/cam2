@@ -3,9 +3,10 @@ window.onload = function() {
   // Normalize the various vendor prefixed versions of getUserMedia.
   navigator.getUserMedia = (navigator.getUserMedia ||
                             navigator.webkitGetUserMedia ||
-                            navigator.mediaDevices.getUserMedia || 
-                            navigator.mozGetUserMedia ||
+                            navigator.mozGetUserMedia || 
                             navigator.msGetUserMedia);
+
+}
 
 // Check that the browser supports getUserMedia.
 // If it doesn't show an alert, otherwise continue.
