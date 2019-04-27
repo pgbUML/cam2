@@ -4,6 +4,7 @@ window.onload = function() {
   navigator.getUserMedia = (navigator.getUserMedia ||
                             navigator.webkitGetUserMedia ||
                             navigator.mediaDevices.getUserMedia || 
+                            navigator.mozGetUserMedia ||
                             navigator.msGetUserMedia);
 
 // Check that the browser supports getUserMedia.
