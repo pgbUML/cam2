@@ -41,4 +41,3 @@ if (navigator.getUserMedia) {
 } else {
   alert('Sorry, your browser does not support getUserMedia');
 }
-}
