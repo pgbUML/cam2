@@ -6,6 +6,20 @@
   <h3>Camera 2nd Try</h3>
 <body>
  <input id="myFileInput" type="file" accept="image/*;capture=camera">
+  <div id="result"></div>
+
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+
   <script>
     var myInput = document.getElementById('myFileInput');
 
