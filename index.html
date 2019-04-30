@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>HTML5 Demo: getUserMedia (Treehouse Blog)</title>
-  <link rel="stylesheet" href="style.css">
+  <title>...</title>
 </head>
   <h3>Camera 2nd Try</h3>
 <body>
-  <div id="video-container">
-    <video id="camera-stream" width="500" autoplay></video>
-  </div>
-  <script src="script.js"></script>
+ <input id="myFileInput" type="file" accept="image/*;capture=camera">
+  <script>
+    var myInput = document.getElementById('myFileInput');
+
+function sendPic() {
+    var file = myInput.files[0];
+
+    // Send file here either by adding it to a `FormData` object 
+    // and sending that via XHR, or by simply passing the file into 
+    // the `send` method of an XHR instance.
+}
+
+myInput.addEventListener('change', sendPic, false);
+  </script>
 </body>
 </html>
