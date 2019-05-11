@@ -16,7 +16,7 @@ if (navigator.getUserMedia) {
   navigator.getUserMedia(
     // Constraints
     {
-      video: true
+      video: false
     },
 
     // Success Callback
